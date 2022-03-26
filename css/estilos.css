@@ -1,0 +1,245 @@
+
+img{ 
+    max-width: 100vw;
+    max-height: 10vw;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #d8d4d0;
+    color: #464e58;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: large;
+}
+.buscador{
+    display: inline;
+    margin-left: 1000px;
+    border-radius: 5px;
+}
+.boton{
+    display: inline;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.menu{
+    display: inline;
+    margin: 0.1vw;
+    padding: 0.1vw;
+    
+}
+.submenu{
+    display: inline;
+}
+.logo{  
+    display:block;
+    max-width: 1080px;
+    max-height: 768px;  
+}
+.primeraReceta{
+    display: block;
+    margin: auto;
+}
+ .segundaReceta{
+    display: block;
+    margin: auto;
+}
+.terceraReceta{
+    display: block;
+    margin: auto;
+}
+.cuartaReceta{
+    display: block;
+    margin: auto;
+}
+.opciones{
+    display: inline;
+    text-justify: auto;
+    list-style-type: none; 
+    text-decoration:none; 
+    font-style:normal; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+.boxDeRecetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+
+}
+.boxDeRecetasSaladas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.boxDeRecetasDulces{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.postres{
+    margin: 20px;
+}
+.galletas{ 
+    margin: 20px;
+}
+.tortas{
+    margin: 20px;
+}
+.carnes{
+    margin: 20px;
+}
+.pastas{
+    margin: 20px;
+}
+.sopas{
+    margin: 20px;
+}
+.ensaladas{
+    margin: 20px;
+}
+.vegano{
+    margin: 20px;
+}
+.equipoImagen{
+    display: block;
+    margin: auto;
+}
+.navegacion{
+    background-color: #2E2B2A;
+    max-width: 100vw;
+    min-width: 100vw;
+    display: flex;
+  
+}
+.menu li {
+    background-color: #2E2B2A;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.submenu{
+    display: none;
+    position: absolute;
+}
+.submenu li{
+    display: block;
+}
+.menu li:hover ul{
+    display: block;
+}
+.redes{
+    display: inline-flex;
+    margin: 5px;
+}
+.instagramLogo{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+.facebookLogo{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+.youtubeLogo{
+    height: 50px;
+    width: 50px; 
+    margin: 5px;
+}
+
+@media screen and (max-width: 480px){
+    .menu{
+        flex-direction: column;
+    }
+    .boxDeRecetas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: none;
+    }
+    .buscador{
+        display: none;
+    }
+    .boton{
+        display: none;
+    }
+    .logo{
+        max-width: 480px;
+        max-height: 180px;
+    }
+    .primeraReceta{
+        min-width: 300px;
+        min-height: 200px;
+    }
+    .segundaReceta{
+        min-width: 300px;
+        min-height: 200px;
+     }
+     .terceraReceta{
+        min-width: 300px;
+        min-height: 200px;
+     }
+     .cuartaReceta{
+        min-width: 300px;
+        min-height: 200px;
+     }
+     .navegacion{
+        justify-content: space-evenly;
+    }
+    .equipoImagen{
+        min-width: 300px;
+        min-height: 200px;
+    }
+}
+@media screen and (max-width: 780px){
+        .menu{
+            flex-direction: column;
+        }
+        .boxDeRecetas{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            margin: none;
+        }
+        .buscador{
+            display: none;
+        }
+        .boton{
+            display: none;
+        }
+        .logo{
+            max-width: 480px;
+            max-height: 180px;
+        }
+        .primeraReceta{
+           min-width: 500px;
+           min-height: 500px;
+        }
+        .segundaReceta{
+            min-width: 500px;
+            min-height: 500px;
+         }
+         .terceraReceta{
+            min-width: 500px;
+            min-height: 500px;
+         }
+         .cuartaReceta{
+            min-width: 500px;
+            min-height: 500px;
+         }
+         .navegacion{
+             justify-content: space-evenly;
+         }
+         .equipoImagen{
+            min-width: 500px;
+            min-height: 500px;
+         }
+}
