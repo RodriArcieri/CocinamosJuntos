@@ -41,6 +41,12 @@ body{
     display: block;
     margin: auto;
 }
+.primeraReceta img{
+    filter: greyscale;
+}
+.primeraReceta img:hover{
+    fiter:none
+}
  .segundaReceta{
     display: block;
     margin: auto;
