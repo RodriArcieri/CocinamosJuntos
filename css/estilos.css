@@ -42,22 +42,40 @@ body{
     margin: auto;
 }
 .primeraReceta img{
-    filter: greyscale;
+    filter: grayscale();
 }
 .primeraReceta img:hover{
-    fiter:none
+    filter:none
 }
  .segundaReceta{
     display: block;
     margin: auto;
 }
+.segundaReceta img{
+    filter: grayscale();
+}
+.segundaReceta img:hover{
+    filter:none
+}
 .terceraReceta{
     display: block;
     margin: auto;
 }
+.terceraReceta img{
+    filter: grayscale();
+}
+.terceraReceta img:hover{
+    filter:none
+}
 .cuartaReceta{
     display: block;
     margin: auto;
+}
+.cuartaReceta img{
+    filter: grayscale();
+}
+.cuartaReceta img:hover{
+    filter:none
 }
 .opciones{
     display: inline;
