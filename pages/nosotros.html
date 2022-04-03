@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocinamos Juntos</title>
-    <link rel="shortcut icon" href="images/favicon2.png">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@300&display=swap"
-        rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cocinamos Juntos</title>
+        <link rel="shortcut icon" href="../images/favicon2.png">
+        <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <div>
-        <img class="logo" src="../images/logo2.jpg" alt="cocinamos-juntos-logo" title="cocinamos-juntos-logo">
-    </div>
-    <hr />
-    <div>
-        <nav class="navegacion">
-            <form>
-                <ul class="menu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="recetas-saladas.html">RECETAS SALADAS</a>
-                        <ul class="submenu">
-                            <li><a href="#">Carnes</a></li>
-                            <li><a href="#">Pastas</a></li>
-                            <li><a href="#">Sopas</a></li>
-                            <li><a href="#">Ensaladas</a></li>
-                            <li><a href="#">Vegano</a></li>
-                    </li>
-                </ul>
-                <li><a href="recetas-dulces.html">RECETAS DULCES</a>
-                    <ul class="submenu">
-                        <li><a href="#">Postres</a></li>
-                        <li><a href="#">Galletas y Alfajores</a></li>
-                        <li><a href="#">Tortas</a></li>
-                </li>
-                </ul>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <input class="buscador" type="search" name="Buscar Receta" placeholder="Buscar Receta">
-                <input type="submit" value="Buscar">
-                </ul>
-    </div>
-    </div>
-    <article>
-        <h1 class="titulo">Acerca de nosotros</h1>
-        <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta doloremque molestias tenetur
+    <body class="cuerpo">
+        <div>
+            <img class="logo" src="../images/logo.jpeg" alt="cocinamos-juntos-logo" title="cocinamos-juntos-logo">
+        </div>
+        <hr />
+        <nav class="miMenu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-9">
+                        <ul class="nav nav-tabs navegacion">
+                            <li class="nav-item menu">
+                                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item dropdown menu">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="recetas-saladas.html" role="button" aria-expanded="false">RECETAS SALADAS</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="#">CARNES</a></li>
+                                    <li><a class="dropdown-item" href="#">PASTAS</a></li>
+                                    <li><a class="dropdown-item" href="#">SOPAS</a></li>
+                                    <li><a class="dropdown-item" href="#">ENSALADAS</a></li>
+                                    <li><a class="dropdown-item" href="#">APTO VEGANO</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown menu">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="recetas-dulces.html" role="button" aria-expanded="false">RECETAS DULCES</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="#">POSTRES</a></li>
+                                    <li><a class="dropdown-item" href="#">GALLETA Y ALFAJORES</a></li>
+                                    <li><a class="dropdown-item" href="#">TORTAS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item menu">
+                                <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item menu">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             
+        </nav>
+
+    <div class="nosotros">
+        <h3>QUIENES SOMOS</h3>
+        <img class="equipoImagen" src="../images/03chefs4-mobileMasterAt3x.jpg">
+        <aside>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta doloremque molestias tenetur
             magnam nihil eligendi reprehenderit soluta nesciunt a fugiat, animi repellat saepe culpa et dolorum eius
             nemo ut fuga.
             Aperiam, aliquam labore. Ipsam vitae eos, nisi beatae tempora accusamus vel aut id necessitatibus
@@ -75,40 +86,10 @@
             Modi placeat repellendus odio obcaecati! Sed nemo eligendi excepturi explicabo modi ea? Placeat cumque
             doloribus nesciunt enim, suscipit vitae explicabo nemo repellat voluptates debitis animi et aperiam
             mollitia. Nisi, numquam.
-            Nesciunt magnam tempore assumenda facilis harum pariatur, reprehenderit placeat repellat eius? Quisquam, quo
-            itaque facilis, ab asperiores corporis, libero consequatur perferendis corrupti enim voluptate. Dolores
-            similique nobis voluptas voluptatibus animi.
-            Temporibus, eveniet esse saepe repellat sapiente dicta voluptas repellendus. Cum ipsum vitae officiis quam
-            eveniet odio dolore placeat quasi eum voluptates voluptas consequatur facilis sunt blanditiis, harum magni,
-            tenetur accusantium.
-            Nobis vitae, obcaecati cupiditate tempore quam recusandae impedit blanditiis? Incidunt esse dolorum nemo
-            magnam id! Quo laboriosam veritatis odit dicta dolorem itaque qui neque mollitia cumque sapiente sint, modi
-            necessitatibus?
-            Pariatur, velit nostrum? Porro, earum. Perspiciatis eaque consequatur suscipit fugit veniam tenetur deleniti
-            mollitia error aspernatur! Sapiente atque porro quia repellendus minima praesentium quam inventore a,
-            corporis perferendis ipsum in!
-            Eveniet, tempore perspiciatis, reiciendis nam ad vel dolore neque nulla omnis accusantium hic aspernatur
-            rerum nemo id magni quas optio sed odit, cupiditate ex? Nesciunt a pariatur quis? Ab, voluptas?
-            Ipsa voluptate est aspernatur quisquam veritatis sit accusamus, quas corporis impedit nisi? Aspernatur totam
-            unde maxime hic accusantium quos excepturi nemo iure veritatis animi. Consequatur iure facere repellendus
-            commodi ex.
-            Assumenda cumque sequi nam ipsum itaque quae optio dignissimos, autem nihil quia praesentium, maxime, eos
-            repellat sed odit! Voluptatibus dolor deserunt recusandae nulla magni sunt, voluptatum veniam vitae
-            pariatur! Accusantium!
-            Voluptatibus ratione corrupti quas temporibus, modi sed distinctio voluptatem fuga explicabo mollitia sint
-            deleniti libero quod nemo itaque quaerat dolorum maiores nam cupiditate, obcaecati nobis doloremque, ad eos
-            accusamus? Odio.
-            Quia perferendis sit modi mollitia amet magni ducimus accusamus sint labore, dolorum numquam porro adipisci,
-            natus officiis, quam veritatis animi. Necessitatibus ipsum iusto voluptas quaerat illum beatae doloremque
-            esse expedita!
-            Aliquam assumenda nobis, voluptatum itaque sit dignissimos consequuntur corporis dolorem, repellat sint cum
-            eum laborum in, autem libero rerum maxime. Odio possimus sed hic ab adipisci consequuntur facilis quas enim!
-            Atque ipsa voluptas, velit dolorum enim aspernatur mollitia maiores eveniet nulla molestiae soluta
-            repudiandae deserunt corrupti odio quo eius omnis qui accusamus magni vitae nemo labore facere autem!
-            Perferendis, quasi.</p>
-
-        <img class="equipoImagen" src="../images/03chefs4-mobileMasterAt3x.jpg">
-    </article>
+        </aside>
+        <div class="reset"></div>
+      </div>
+      
     <br>
     <br>
     <br>
@@ -124,5 +105,6 @@
         </ul>
     </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </html>

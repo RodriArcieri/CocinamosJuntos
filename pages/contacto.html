@@ -6,67 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocinamos Juntos</title>
-    <link rel="shortcut icon" href="images/favicon2.png">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@300&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon2.png">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div>
-        <img class="logo" src="../images/logo2.jpg" alt="cocinamos-juntos-logo" title="cocinamos-juntos-logo">
+        <img class="logo" src="../images/logo.jpeg" alt="cocinamos-juntos-logo" title="cocinamos-juntos-logo">
     </div>
     <hr />
-    <div>
-        <nav class="navegacion">
-            <form>
-                <ul class="menu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="recetas-saladas.html">RECETAS SALADAS</a>
-                        <ul class="submenu">
-                            <li><a href="#">Carnes</a></li>
-                            <li><a href="#">Pastas</a></li>
-                            <li><a href="#">Sopas</a></li>
-                            <li><a href="#">Ensaladas</a></li>
-                            <li><a href="#">Vegano</a></li>
-                    </li>
-                </ul>
-                <li><a href="recetas-dulces.html">RECETAS DULCES</a>
-                    <ul class="submenu">
-                        <li><a href="#">Postres</a></li>
-                        <li><a href="#">Galletas y Alfajores</a></li>
-                        <li><a href="#">Tortas</a></li>
-                </li>
-                </ul>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <input class="buscador" type="search" name="Buscar Receta" placeholder="Buscar Receta">
-                <input type="submit" value="Buscar">
-                </ul>
-    </div>
+    <nav class="miMenu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs navegacion">
+                        <li class="nav-item menu">
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                href="recetas-saladas.html" role="button" aria-expanded="false">RECETAS SALADAS</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="#">CARNES</a></li>
+                                <li><a class="dropdown-item" href="#">PASTAS</a></li>
+                                <li><a class="dropdown-item" href="#">SOPAS</a></li>
+                                <li><a class="dropdown-item" href="#">ENSALADAS</a></li>
+                                <li><a class="dropdown-item" href="#">APTO VEGANO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                href="recetas-dulces.html" role="button" aria-expanded="false">RECETAS DULCES</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="#">POSTRES</a></li>
+                                <li><a class="dropdown-item" href="#">GALLETA Y ALFAJORES</a></li>
+                                <li><a class="dropdown-item" href="#">TORTAS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item menu">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item menu">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <br>
     <fieldset>
-        <form>
+        <form class="formulario col-3">
             <legend>Dejanos tus comentarios</legend>
             <h4>Nombre:</h4>
-            <input type="text" placeholder="Ingrese su nombre">
+            <form>
+                <div class="row">
+                  <div>
+                <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                  </div>
+                </div>
             <h4>Email:</h4>
-            <input type="email" placeholder="Ingrese su email">
-            <h4>Mensaje:</h4>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Deje aquí su mensaje"></textarea>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetear">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <input class="btn btn-primary" type="submit" value="Enviar">
+              <br>
+              <br>
+              <input class="btn btn-primary" type="reset" value="Resetear">
+              
         </form>
     </fieldset>
-
+    <br>
+    <br>
+    <br>
+    <div class="dondeEncontrarnos col-4">
     <h3>Donde encontrarnos</h3>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.5040073657206!2d-56.200323053269734!3d-34.90647451793376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb95846203de847c5!2sPuerta%20de%20la%20Ciudadela!5e0!3m2!1ses-419!2suy!4v1646000666240!5m2!1ses-419!2suy"
         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+    </div>
     <br>
     <br>
     <br>
@@ -83,4 +110,7 @@
     </footer>
 </body>
 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </html>
