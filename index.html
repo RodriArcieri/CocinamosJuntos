@@ -7,82 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocinamos Juntos</title>
     <link rel="shortcut icon" href="images/favicon2.png">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div>
-        <img class="logo" src="images/logo2.jpg" alt="cocinamos-juntos-logo" title="cocinamos-juntos-logo">
+    <div class="container-fluid logo">
+        <img src="images/logo.jpeg" class="img-fluid" alt="cocinamosJuntos-logo">
     </div>
     <hr />
-    <div>
-        <nav class="navegacion">
-            <form>
-                <ul class="menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="pages/recetas-saladas.html">RECETAS SALADAS</a>
-                        <ul class="submenu">
-                            <li><a href="#">Carnes</a></li>
-                            <li><a href="#">Pastas</a></li>
-                            <li><a href="#">Sopas</a></li>
-                            <li><a href="#">Ensaladas</a></li>
-                            <li><a href="#">Vegano</a></li>
-                    </li>
-                </ul>
-                <li><a href="pages/recetas-dulces.html">RECETAS DULCES</a>
-                    <ul class="submenu">
-                        <li><a href="#">Postres</a></li>
-                        <li><a href="#">Galletas y Alfajores</a></li>
-                        <li><a href="#">Tortas</a></li>
-                </li>
-                </ul>
-                <li><a href="pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
-                <input class="buscador" type="search" name="Buscar Receta" placeholder="Buscar Receta">
-                <input class="boton" type="submit" value="Buscar">
-                </ul>
-    </div>
-    <p>Bienvenid@s!! ...Somos Cocinamos Juntos
-    <p>Esperamos que disfrutes de nuestras recetas!!</p>
+    <nav class="miMenu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9">
+                    <ul class="nav nav-tabs navegacion">
+                        <li class="nav-item menu">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                href="pages/recetas-saladas.html" role="button" aria-expanded="false">RECETAS SALADAS</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="#">CARNES</a></li>
+                                <li><a class="dropdown-item" href="#">PASTAS</a></li>
+                                <li><a class="dropdown-item" href="#">SOPAS</a></li>
+                                <li><a class="dropdown-item" href="#">ENSALADAS</a></li>
+                                <li><a class="dropdown-item" href="#">APTO VEGANO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                href="pages/recetas-dulces.html" role="button" aria-expanded="false">RECETAS DULCES</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="#">POSTRES</a></li>
+                                <li><a class="dropdown-item" href="#">GALLETA Y ALFAJORES</a></li>
+                                <li><a class="dropdown-item" href="#">TORTAS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item menu">
+                            <a class="nav-link active" aria-current="page" href="pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item menu">
+                            <a class="nav-link active" aria-current="page" href="pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="input-group col-3">
+             <div class="input-group cajaDeBusqueda">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary">Buscar</button>
+          </div>
+            </div>
+        </div>
+    </nav>
 
-    <br>
-    <br>
-    <br>
-    <br>
+<hr>
 
-    <div class="boxDeRecetas">
-        <div class="primeraReceta">
-            <h4 class="tituloReceta">Ensalada de Atun</h4>
+    <div class="container-fluid">
+    <div class="row caja">
+    <div class="boxDeRecetas col-12">
+        <div class="contenedorDeReceta receta1">
             <img class="primeraReceta" src="images/Recetas/ensalada.jpg" alt="recetaEnsalada" title="recetaEnsalada">
+            <h4 class="tituloReceta">Ensalada de Atun</h4>
+            <p>Bienvenidos a Cocinamos Juntos, en esta edición vamos a hacer una receta saludable pero riquisima, ensalada de Atun</p>
             <br />
         </div>
-
-        <div class="segundaReceta">
-            <h4 class="tituloReceta">Guiso de Lentejas</h4>
+        <div class="contenedorDeReceta receta2">
             <img class="segundaReceta" src="images/Recetas/guiso.jpg" alt="recetaGuiso" title="recetaGuiso">
+            <h4 class="tituloReceta">Guiso de Lentejas</h4>
+            <p>Bienvenidos a Cocinamos Juntos, en esta edición vamos a hacer un clasico de invierno, guiso de lentejas.</p>
         </div>
-        <div class="terceraReceta">
-            <h4 class="tituloReceta">Pollo Teriyaki</h4>
+        <div class="contenedorDeReceta receta3">
             <img class="terceraReceta" src="images/Recetas/pollo.jpg" alt="recetaPollo" title="recetaPollo">
+            <h4 class="tituloReceta">Pollo Teriyaki</h4>
+            <p>Bienvenidos a Cocinamos Juntos, en esta edición vamos a hacer la receta mas facil de la cocina asiatica, pollo Teriyaki.</p>
         </div>
-        <div class="cuartaReceta">
-            <h4 class="tituloReceta">Bruschetta de Palta</h4>
+        <div class="contenedorDeReceta receta4">
             <img class="cuartaReceta" src="images/Recetas/tostada.jpg" alt="recetaTostada" title="recetaTostada">
+            <h4 class="tituloReceta">Bruschetta de Palta</h4>
+            <p>Bienvenidos a Cocinamos Juntos, en esta edición vamos a hacer una buena entrada, tostada con palta.</p>
         </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <hr />
-    <footer>
+    </div>
+    </div>
+ 
+    <footer class="footer row">
         <ul class="redes">
             <div class="instagram"><a href="https://www.instagram.com"><img class="instagramLogo"
                         src="images/instagram.png"></a></div>
@@ -91,7 +103,9 @@
             <div class="youtube"><a href="https://www.Youtube.com"><img class="youtubeLogo"
                         src="images/youtube.png"></a></div>
         </ul>
+        <p>&copy; Rodrigo Arcieri</p>
     </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </html>
