@@ -1,0 +1,210 @@
+/* GENERAL */
+
+body {
+    background-color: whitesmoke;
+    color: #1A2426;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: large;
+}
+
+/* CONTENEDOR LOGO */
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100vh;
+    margin: 0%;
+}
+
+/* CONTENEDOR MENU */
+.miMenu {
+    background-color: #2E2B2A;
+    .navegacion li>a {
+        background-color: #2E2B2A;
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        min-width: 100px;
+    }
+    .navegacion {
+        background-color: #2E2B2A;
+    }
+    .navegacion li>a:hover {
+        color: #2E2B2A;
+        background-color: #eaeaea;
+    }
+    .navegacion>li {
+        float: left;
+        text-align: center
+    }
+    .navegacion>li>ul {
+        display: none;
+    }
+    .navegacion>li:hover>ul {
+        display: block;
+    }
+    .menu {
+        display: inline;
+        margin: 0.1vw;
+        padding: 0.1vw;
+    }
+        .submenu {
+            display: inline;
+        }
+
+}
+.opciones {
+    display: inline;
+    text-justify: auto;
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* CONTENEDOR BUSCADOR*/
+.cajaDeBusqueda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    input {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 0.8rem;
+        padding-right: 5rem;
+    }
+    button {
+        display: inline;
+        border-radius: 5px;
+        margin-left: 15px;
+    }
+}
+
+/* BOX DE RECETAS*/
+
+.contenedorPrincipal{
+    display: flex;
+}
+.boxDeRecetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    background-color:#fff;
+    justify-content: space-around;
+    img{
+        filter: grayscale(100%);
+    }
+    img:hover{
+        filter: none;
+    }    
+}
+
+.contenedorDeReceta{
+      background-color:#2E2B2A;
+      padding:20px;
+      border-radius:10px;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:sans-serif;
+      flex-direction: column;
+}
+.contenedorDeReceta img{
+    max-width: 400px;
+    max-height: 400px;
+}
+.row div{
+    margin: 15px;
+    
+}
+
+.caja{
+    display: grid;
+}
+  
+
+
+
+/*CONTENEDOR FOOTER */
+
+.footer{
+    margin-top: 20vw;
+}
+.redes{
+    display: inline-flex;
+    margin-top: 100px;
+    margin: 5px;
+    justify-content: flex-start;
+}
+
+.instagramLogo {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.facebookLogo {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.youtubeLogo {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+
+ /*--CONTACTO--*/
+ .formulario{
+    background-color:#2E2B2A;
+    padding:20px;
+    margin: 10px;
+    border-radius:10px;
+    color:#fff;
+    align-items:center;
+    justify-content:flex-start;
+    font-family:sans-serif;
+    flex-direction: row;
+}
+.dondeEncontrarnos{
+    background-color:#2E2B2A;
+      padding:20px;
+      margin: 10px;
+      border-radius:10px;
+      color:#fff;
+      align-items:center;
+      justify-content:flex-start;
+      font-family:sans-serif;
+      flex-direction: column;
+}
+/*--NOSOTROS--*/
+
+div.nosotros {
+    width: 50%;
+    margin: 20px auto;
+    background-color:#2E2B2A;
+    color: #fff;
+    padding: 15px;
+    border-radius:10px;
+    img.equipoImagen {
+        float: left;
+        margin-right: 15px;
+      }
+      .equipoImagen{
+        max-width: 500px;
+        max-height: 500px;
+    }
+  }
+  
