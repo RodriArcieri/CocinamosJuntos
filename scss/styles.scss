@@ -208,3 +208,8 @@ div.nosotros {
     }
   }
   
+/*-- MEDIA QUERIES--*/
+@media screen {max-width: 390px;
+    img{
+        width: 300px;
+    }
