@@ -1,5 +1,3 @@
-
-
 body {
     background-color: whitesmoke;
     color: #1A2426;
@@ -77,11 +75,12 @@ body {
 }
 
 /* CONTENEDOR BUSCADOR*/
-.cajaDeBusqueda{
+.cajaDeBusqueda {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
 .contenedorDeBusqueda {
     display: flex;
     justify-content: flex-end;
@@ -109,56 +108,63 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.boxDeRecetas img{
+
+.boxDeRecetas img {
     filter: grayscale();
 }
-.boxDeRecetas img:hover{
+
+.boxDeRecetas img:hover {
     filter: none;
-    
+
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     margin: 20px auto;
-    width:400px;
-    height:400px;
-    background-color:#fff;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
 }
-.contenedorDeReceta{
-      background-color:#2E2B2A;
-      padding:20px;
-      border-radius:10px;
-      color:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-family:sans-serif;
-      flex-direction: column;
+
+.contenedorDeReceta {
+    background-color: #2E2B2A;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
 }
-.contenedorDeReceta img{
+
+.contenedorDeReceta img {
     max-width: 400px;
     max-height: 400px;
 }
-.row div{
+
+.row div {
     margin: 15px;
-    
+
 }
 
-.caja{
+.caja {
     display: grid;
 }
-  
+
 
 
 
 /*CONTENEDOR FOOTER */
 
-.footer{
+.footer {
     margin-top: 20vw;
 }
-.redes{
+
+.redes {
     display: inline-flex;
     margin-top: 100px;
     margin: 5px;
@@ -184,45 +190,121 @@ body {
 }
 
 /*--NOSOTROS--*/
-.equipoImagen{
+.equipoImagen {
     max-width: 500px;
     max-height: 500px;
 }
+
 div.nosotros {
     width: 50%;
     margin: 20px auto;
-    background-color:#2E2B2A;
+    background-color: #2E2B2A;
     color: #fff;
     padding: 15px;
-    border-radius:10px;
-  }
-  
-  div.nosotros img.equipoImagen {
+    border-radius: 10px;
+}
+
+div.nosotros img.equipoImagen {
     float: left;
     margin-right: 15px;
-  }
+}
 
 
-  /*--CONTACTO--*/
-  .formulario{
-      background-color:#2E2B2A;
-      padding:20px;
-      margin: 10px;
-      border-radius:10px;
-      color:#fff;
-      align-items:center;
-      justify-content:flex-start;
-      font-family:sans-serif;
-      flex-direction: row;
+/*--CONTACTO--*/
+.formulario {
+    background-color: #2E2B2A;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: sans-serif;
+    flex-direction: row;
 }
-.dondeEncontrarnos{
-    background-color:#2E2B2A;
-      padding:20px;
-      margin: 10px;
-      border-radius:10px;
-      color:#fff;
-      align-items:center;
-      justify-content:flex-start;
-      font-family:sans-serif;
-      flex-direction: column;
+
+.dondeEncontrarnos {
+    background-color: #2E2B2A;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: sans-serif;
+    flex-direction: column;
 }
+
+/*-- RECETAS --*/
+.contenedorReceta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.Titulo{
+    background-color: #193b44;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+.Titulo h1{
+    font-size:60px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.Ingredientes {
+    background-color: #2E2B2A;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    align-items: left;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+.Procedimiento {
+    background-color: #2E2B2A;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    align-items: left;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+.Procedimiento li{
+   list-style: none;
+}.recetaFoto{
+    background-color: #2E2B2A;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    align-items: left;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+.recetaFoto img{
+    max-width: 500px;
+    max-height: 450px;
+}   
+/*--MEDIA QUERIES--*/
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 992px) {}
