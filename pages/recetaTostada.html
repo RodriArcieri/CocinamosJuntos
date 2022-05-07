@@ -14,20 +14,22 @@
     </head>
 <body>
     <div class="container-fluid logo">
-        <img src="../images/logo.jpeg" class="img-fluid" alt="cocinamosJuntos-logo">
+        <div>
+            <img src="../images/logo.jpeg" class="logo img-fluid" alt="cocinamosJuntos-logo">
+        </div>
     </div>
-    <hr />
     <nav class="miMenu">
-        <div class="container-fluid">
+        <div class="container-fluid menuDropdown">
             <div class="row">
-                <div class="col-9">
+                <div class="col-sm-11">
                     <ul class="nav nav-tabs navegacion">
-                        <li class="nav-item menu">
+                        <li class="nav-item menu menuOpcion">
                             <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
                         </li>
-                        <li class="nav-item dropdown menu">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                href="../pages/recetas-saladas.html" role="button" aria-expanded="false">RECETAS SALADAS</a>
+                        <li class="nav-item dropdown menu menuOpcion">
+                            <a class="nav-link dropdown-toggle" href="recetas-saladas.html" role="button"
+                                aria-expanded="false">RECETAS
+                                SALADAS</a>
                             <ul class="dropdown-menu submenu">
                                 <li><a class="dropdown-item" href="#">CARNES</a></li>
                                 <li><a class="dropdown-item" href="#">PASTAS</a></li>
@@ -36,31 +38,32 @@
                                 <li><a class="dropdown-item" href="#">APTO VEGANO</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown menu">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                href="../pages/recetas-dulces.html" role="button" aria-expanded="false">RECETAS DULCES</a>
+                        <li class="nav-item dropdown menu menuOpcion">
+                            <a class="nav-link dropdown-toggle" href="recetas-dulces.html" role="button"
+                                aria-expanded="false">RECETAS DULCES</a>
                             <ul class="dropdown-menu submenu">
                                 <li><a class="dropdown-item" href="#">POSTRES</a></li>
                                 <li><a class="dropdown-item" href="#">GALLETA Y ALFAJORES</a></li>
                                 <li><a class="dropdown-item" href="#">TORTAS</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item menu">
-                            <a class="nav-link active" aria-current="page" href="pages/nosotros.html">NOSOTROS</a>
+                        <li class="nav-item menu menuOpcion">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
                         </li>
-                        <li class="nav-item menu">
-                            <a class="nav-link active" aria-current="page" href="pages/contacto.html">CONTACTO</a>
+                        <li class="nav-item menu menuOpcion">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="input-group col-3">
-             <div class="input-group cajaDeBusqueda">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary">Buscar</button>
-          </div>
+        <div class="input-group col-12">
+            <div class="input-group cajaDeBusqueda">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">Buscar</button>
             </div>
+        </div>
         </div>
     </nav>
     

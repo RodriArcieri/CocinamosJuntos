@@ -14,85 +14,79 @@
     </head>
 <body>
     <div class="container-fluid logo">
-        <img src="../images/logo.jpeg" class="img-fluid" alt="cocinamosJuntos-logo">
+        <div>
+            <img src="images/logo.jpeg" class="logo img-fluid" alt="cocinamosJuntos-logo">
+        </div>
     </div>
     <hr />
     <nav class="miMenu">
-        <div class="container-fluid logo">
-            <div>
-                <img src="../images/logo.jpeg" class="logo img-fluid" alt="cocinamosJuntos-logo">
-            </div>
-        </div>
-        <nav class="miMenu">
-            <div class="container-fluid menuDropdown">
-                <div class="row">
-                    <div class="col-sm-11">
-                        <ul class="nav nav-tabs navegacion">
-                            <li class="nav-item menu menuOpcion">
-                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item dropdown menu menuOpcion">
-                                <a class="nav-link dropdown-toggle" href="pages/recetas-saladas.html" role="button"
-                                    aria-expanded="false">RECETAS
-                                    SALADAS</a>
-                                <ul class="dropdown-menu submenu">
-                                    <li><a class="dropdown-item" href="#">CARNES</a></li>
-                                    <li><a class="dropdown-item" href="#">PASTAS</a></li>
-                                    <li><a class="dropdown-item" href="#">SOPAS</a></li>
-                                    <li><a class="dropdown-item" href="#">ENSALADAS</a></li>
-                                    <li><a class="dropdown-item" href="#">APTO VEGANO</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown menu menuOpcion">
-                                <a class="nav-link dropdown-toggle" href="pages/recetas-dulces.html" role="button"
-                                    aria-expanded="false">RECETAS DULCES</a>
-                                <ul class="dropdown-menu submenu">
-                                    <li><a class="dropdown-item" href="#">POSTRES</a></li>
-                                    <li><a class="dropdown-item" href="#">GALLETA Y ALFAJORES</a></li>
-                                    <li><a class="dropdown-item" href="#">TORTAS</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item menu menuOpcion">
-                                <a class="nav-link active" aria-current="page" href="pages/nosotros.html">NOSOTROS</a>
-                            </li>
-                            <li class="nav-item menu menuOpcion">
-                                <a class="nav-link active" aria-current="page" href="pages/contacto.html">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="input-group col-12">
-                <div class="input-group cajaDeBusqueda">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                        aria-describedby="search-addon" />
-                    <button type="button" class="btn btn-outline-primary">Buscar</button>
-                </div>
-            </div>
-            </div>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="flex bg-dark p-4">
-                <div class="row">
-                    <a href="../index.html" class="text-white h4">HOME</a>
-                    <a href="../pages/recetas-saladas.html" class="text-white h4">RECETAS SALADAS</a>
-                    <a href="../pages/recetas-dulces.html" class="text-white h4">RECETAS DULCES</a>
-                    <a href="../pages/nosotros.html" class="text-white h4">NOSOTROS</a>
-                    <a href="../pages/contacto.html" class="text-white h4">CONTACTO</a>
+        <div class="container-fluid menuDropdown">
+            <div class="row">
+                <div class="col-sm-11">
+                    <ul class="nav nav-tabs navegacion">
+                        <li class="nav-item menu menuOpcion">
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown menu menuOpcion">
+                            <a class="nav-link dropdown-toggle" href="recetas-saladas.html" role="button"
+                                aria-expanded="false">RECETAS
+                                SALADAS</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="#">CARNES</a></li>
+                                <li><a class="dropdown-item" href="#">PASTAS</a></li>
+                                <li><a class="dropdown-item" href="#">SOPAS</a></li>
+                                <li><a class="dropdown-item" href="#">ENSALADAS</a></li>
+                                <li><a class="dropdown-item" href="#">APTO VEGANO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown menu menuOpcion">
+                            <a class="nav-link dropdown-toggle" href="recetas-dulces.html" role="button"
+                                aria-expanded="false">RECETAS DULCES</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="#">POSTRES</a></li>
+                                <li><a class="dropdown-item" href="#">GALLETA Y ALFAJORES</a></li>
+                                <li><a class="dropdown-item" href="#">TORTAS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item menu menuOpcion">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item menu menuOpcion">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <nav class="menuHamburguesa navbar navbar-dark bg-dark navbar-collapse " toggle="collapse" dataTarget=".navbar-collapse">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation" >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="input-group col-12">
+            <div class="input-group cajaDeBusqueda">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">Buscar</button>
             </div>
-        </nav>
-
-    
+        </div>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="flex bg-dark p-4">
+            <div class="row">
+                <a href="../index.html" class="text-white h4">HOME</a>
+                <a href="recetas-saladas.html" class="text-white h4">RECETAS SALADAS</a>
+                <a href="recetas-dulces.html" class="text-white h4">RECETAS DULCES</a>
+                <a href="nosotros.html" class="text-white h4">NOSOTROS</a>
+                <a href="contacto.html" class="text-white h4">CONTACTO</a>
+            </div>
+        </div>
+    </div>
+    <nav class="menuHamburguesa navbar navbar-dark bg-dark navbar-collapse " toggle="collapse" dataTarget=".navbar-collapse">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
 <div class="Titulo">
     <h1>Ensalada de Atún</h1>
 <p>¿No sabes que tomar de almuerzo o cena que sea rápido, sano y delicioso? Esta ensalada de atún cubrirá esas tres características.</p>

@@ -197,8 +197,8 @@ body {
 
 /*--NOSOTROS--*/
 .equipoImagen {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 350px;
+    max-height: 350px;
 }
 
 div.nosotros {
@@ -345,9 +345,6 @@ div.nosotros img.equipoImagen {
     }
     .nosotros{
         width: 100%;
-    }
-    .equipoImagen{
-        max-width: 400px;
     }
 }
 
