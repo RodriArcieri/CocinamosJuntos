@@ -10,15 +10,16 @@ body {
 
 .logo {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: flex-start;
-    /* width: 100vh; */
     margin: 0%;
-  
+
 }
-.logo img{
+
+.logo img {
     min-width: 500px;
 }
+
 /* CONTENEDOR MENU */
 .menu {
     display: inline;
@@ -239,12 +240,13 @@ div.nosotros img.equipoImagen {
 }
 
 /*-- RECETAS --*/
-.contenedorReceta{
+.contenedorReceta {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.Titulo{
+
+.Titulo {
     background-color: #193b44;
     padding: 20px;
     margin: 20px;
@@ -253,8 +255,9 @@ div.nosotros img.equipoImagen {
     font-family: sans-serif;
     flex-direction: column;
 }
-.Titulo h1{
-    font-size:60px;
+
+.Titulo h1 {
+    font-size: 60px;
     font-weight: 400;
     letter-spacing: -1px;
     padding: 20px;
@@ -273,6 +276,7 @@ div.nosotros img.equipoImagen {
     font-family: sans-serif;
     flex-direction: column;
 }
+
 .Procedimiento {
     background-color: #2E2B2A;
     padding: 20px;
@@ -285,9 +289,12 @@ div.nosotros img.equipoImagen {
     font-family: sans-serif;
     flex-direction: column;
 }
-.Procedimiento li{
-   list-style: none;
-}.recetaFoto{
+
+.Procedimiento li {
+    list-style: none;
+}
+
+.recetaFoto {
     background-color: #2E2B2A;
     padding: 20px;
     margin-left: 20px;
@@ -299,32 +306,48 @@ div.nosotros img.equipoImagen {
     font-family: sans-serif;
     flex-direction: column;
 }
-.recetaFoto img{
+
+.recetaFoto img {
     max-width: 500px;
     max-height: 450px;
-}   
+}
+
 /*--MEDIA QUERIES--*/
 
 @media screen and (max-width: 426px) {
-    .imagen {width: 100vw;
+    .imagen {
+        width: 100vw;
     }
-    .row{
+
+    .row {
         padding: 0;
     }
-    .caja{
+
+    .caja {
         display: flex;
         padding-left: 25px;
     }
 }
+
 @media screen and (max-width: 540px) {
-    .imagen {max-width: 100vw;
+    .imagen {
+        max-width: 100vw;
     }
 }
+
 @media screen and (max-width: 880px) {
-    .imagen {max-width: 100vw;
+    .imagen {
+        max-width: 100vw;
     }
-.boxDeRecetas{
-    max-width: 800px;
+    .menuDropdown{
+        display: none;
+    }
+    
+    .menuOpcion {
+        font-size: smaller;
+    }
+
+    .boxDeRecetas {
+        max-width: 800px;
+    }
 }
-}
-@media screen and (max-width: 992px) {}
