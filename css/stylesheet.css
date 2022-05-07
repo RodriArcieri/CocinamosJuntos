@@ -103,7 +103,9 @@ body {
     border-radius: 5px;
     margin-left: 15px;
 }
-
+    .menuHamburguesa{
+        display: none;
+    }
 /* BOX DE RECETAS*/
 
 .boxDeRecetas {
@@ -327,27 +329,54 @@ div.nosotros img.equipoImagen {
         display: flex;
         padding-left: 25px;
     }
+    .contenedorReceta{
+        flex-direction: column;
+    }    
+    .recetaFoto{
+    max-width: 400px;
 }
+    .recetaFoto img{
+        max-width: 300px;
+    }
+    .menuDropdown {
+        display: none;
+    }
+    .menuHamburguesa{
+        display: block;
+    }
+}
+
 
 @media screen and (max-width: 540px) {
     .imagen {
         max-width: 100vw;
     }
+    .contenedorReceta{
+        flex-direction: column;
+    }
+        .recetaFoto{
+            max-width: 540px;
+    }  
+    .menuDropdown {
+        display: none;
+    }
+    .menuHamburguesa{
+        display: block;
+    }
 }
-
 @media screen and (max-width: 880px) {
     .imagen {
         max-width: 100vw;
     }
-    .menuDropdown{
-        display: none;
-    }
-    
     .menuOpcion {
         font-size: smaller;
     }
-
-    .boxDeRecetas {
-        max-width: 800px;
+    .contenedorReceta{
+        flex-direction: column;
+      
     }
-}
+    .recetaFoto{
+        max-width: 540px;
+            } 
+
+    }
