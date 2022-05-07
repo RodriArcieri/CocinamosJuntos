@@ -202,7 +202,6 @@ body {
 }
 
 div.nosotros {
-    width: 50%;
     margin: 20px auto;
     background-color: #2E2B2A;
     color: #fff;
@@ -343,6 +342,12 @@ div.nosotros img.equipoImagen {
     }
     .menuHamburguesa{
         display: block;
+    }
+    .nosotros{
+        width: 100%;
+    }
+    .equipoImagen{
+        max-width: 400px;
     }
 }
 
