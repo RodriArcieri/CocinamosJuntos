@@ -4,6 +4,7 @@ body {
     font-family: 'League Gothic', sans-serif;
     font-family: 'Smooch Sans', sans-serif;
     font-size: large;
+     
 }
 
 /* CONTENEDOR LOGO */
@@ -319,14 +320,16 @@ div.nosotros img.equipoImagen {
     .imagen {
         width: 100vw;
     }
-
+.logo img {
+    min-width: 300px;
+}
     .row {
         padding: 0;
     }
 
     .caja {
         display: flex;
-        padding-left: 25px;
+        padding-left: 0px;
     }
     .contenedorReceta{
         flex-direction: column;
@@ -351,7 +354,9 @@ div.nosotros img.equipoImagen {
 
 @media screen and (max-width: 540px) {
     .imagen {
-        max-width: 100vw;
+        max-width: 300px;
+        max-height: 100px;
+      
     }
     .contenedorReceta{
         flex-direction: column;
@@ -364,6 +369,12 @@ div.nosotros img.equipoImagen {
     }
     .menuHamburguesa{
         display: block;
+    }
+    .boxDeRecetas{
+        max-width: 400px;
+    }
+    .contenedorDeReceta img{
+        max-width: 300px;
     }
 }
 @media screen and (max-width: 880px) {
